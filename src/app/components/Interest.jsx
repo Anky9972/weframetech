@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import table from "../../../public/assets/table-bg.png";
-import heart from "../../../public/assets/Heart.png";
+import heart from "../../../public/assets/Heart-big.png";
 
 function Interest() {
   return (

@@ -48,6 +48,7 @@ const Navbar = () => {
           <div className="w-full lg:w-3/5 flex">
             {/* Mobile Menu Toggle */}
             <button
+              aria-label="Open Navigation Menu"
               className="lg:hidden absolute left-4 top-10 transform -translate-y-1/2"
               onClick={toggleMobileMenu}
             >

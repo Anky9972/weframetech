@@ -48,9 +48,9 @@ const Footer = () => {
             },
           ].map((section) => (
             <div key={section.title} className="font-medium">
-              <h3 className="text-base sm:text-lg font-bold mb-2">
+              <h1 className="text-base sm:text-lg font-bold mb-2">
                 {section.title}
-              </h3>
+              </h1>
               <ul className="space-y-2 text-xs sm:text-sm text-[#393939]">
                 {section.items.map((item) => (
                   <li key={item} className="cursor-pointer hover:text-gray-600">
@@ -63,9 +63,9 @@ const Footer = () => {
         </div>
       </div>
       <div className="mt-8 sm:mt-0">
-        <h3 className="text-base sm:text-lg font-bold mb-2 text-center sm:text-end">
+        <h1 className="text-base sm:text-lg font-bold mb-2 text-center sm:text-end">
           NOUS SUIVRE
-        </h3>
+        </h1>
         <div className="flex justify-center sm:justify-end space-x-4">
           {[
             { icon: twitter, alt: "Twitter" },

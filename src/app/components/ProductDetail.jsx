@@ -6,7 +6,7 @@ import table from "../../../public/assets/table.png";
 import plus from "../../../public/assets/plus.png";
 import frame from "../../../public/assets/Frame.png";
 import vector from "../../../public/assets/Vector.png";
-import heart from "../../../public/assets/Heart.png";
+import heart from "../../../public/assets/Heart-big.png";
 
 function ProductDetail() {
   const [quantity, setQuantity] = useState(1);
