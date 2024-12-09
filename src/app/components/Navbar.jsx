@@ -44,7 +44,7 @@ const Navbar = () => {
     <header className="w-full fixed top-0 left-0 bg-white z-10 shadow-sm">
       <nav className="w-full flex flex-col">
         {/* Top Navigation */}
-        <div className="flex items-center justify-between p-4 lg:px-8">
+        <div className="flex w-full items-center justify-between p-4 lg:px-8">
           <div className="w-full lg:w-3/5 flex">
             {/* Mobile Menu Toggle */}
             <button
@@ -60,13 +60,13 @@ const Navbar = () => {
             </button>
 
             {/* Logo */}
-            <div className="w-full flex justify-center items-center lg:justify-start">
+            <div className="w-full lg:w-auto flex justify-center items-center lg:justify-start">
               <Image src={logo} alt="logo" className="w-[120px] sm:w-[153px]" />
             </div>
 
             {/* Search Bar */}
             <div className="hidden relative lg:block w-full">
-              <div className="flex">
+              <div className="flex w-full">
                 <input
                   type="text"
                   className="bg-[#F9FAFB] w-full p-3 border-none rounded-l-md text-[#667482] outline-2 outline-[#0093D0] text-sm"
@@ -93,7 +93,11 @@ const Navbar = () => {
           {/* User Actions */}
           <div className="hidden lg:flex items-center justify-end gap-4">
             <div className="flex items-center gap-2 text-[#3B4347] text-sm font-semibold cursor-pointer">
-              <Image src={bulb} alt="inspirations" className="h-[18px] w-[18px]" />
+              <Image
+                src={bulb}
+                alt="inspirations"
+                className="h-[18px] w-[18px]"
+              />
               <span>Inspirations</span>
             </div>
             <div className="flex items-center gap-2 text-[#3B4347] text-sm font-semibold cursor-pointer">
@@ -102,7 +106,7 @@ const Navbar = () => {
             </div>
             <button
               aria-label="Open Cart"
-              className="flex bg-[#0093D0] p-3 items-center gap-2 rounded-md text-white text-sm font-medium"
+              className="flex bg-[#0093D0] p-3 items-center gap-2 rounded-md text-white font-medium"
             >
               <Image src={cart} alt="panier" className="h-4 w-4" />
               Panier
