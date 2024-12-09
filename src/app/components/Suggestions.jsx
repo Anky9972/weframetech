@@ -105,7 +105,9 @@ const SuggestionsProducts = () => {
           </div>
           {/* View All */}
           <div className="text-center mt-4">
-            <button className="border w-full font-semibold text-gray-900 p-2 ">
+            <button 
+            aria-label="Voir tous les résultats"
+            className="border w-full font-semibold text-gray-900 p-2 ">
               Voir tous les résultats
             </button>
           </div>

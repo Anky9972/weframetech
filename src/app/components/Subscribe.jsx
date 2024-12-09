@@ -74,10 +74,10 @@ function Subscribe() {
         <div className="w-full flex flex-col lg:flex-row gap-4 lg:gap-6">
           <div className="w-full lg:w-1/2 rounded-xl overflow-hidden">
             <Image
+              loading="lazy"
               src={buffet}
               alt="buffet"
               className="w-full h-auto object-cover"
-              priority
             />
           </div>
           <div className="w-full lg:w-1/2 bg-[#FFF3F9] p-4 sm:p-6 lg:p-8 rounded-xl">
@@ -98,7 +98,9 @@ function Subscribe() {
                 className="border py-2 px-4 rounded-md border-[#F5E1EB] text-base w-full sm:w-4/5 sm:mb-0"
                 placeholder="john@doe.com"
               />
-              <button className="bg-[#5CD2DD] text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 text-base font-bold w-full sm:w-auto">
+              <button 
+              aria-label="Subscribe"
+              className="bg-[#5CD2DD] text-white px-4 py-2 rounded-md flex items-center justify-center gap-2 text-base font-bold w-full sm:w-auto">
                 S&apos;inscrire{" "}
                 <Image src={arrow} alt="arrow-right" className="w-4" />
               </button>

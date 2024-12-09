@@ -41,6 +41,7 @@ function ProductDetail() {
         {/* Product Images */}
         <div className="w-full lg:w-1/2 bg-[#F8F6F4] p-6 sm:p-12 lg:p-24 relative rounded-md flex justify-center items-center">
           <Image
+            priority
             src={machine}
             alt="machine"
             className="max-w-full h-auto object-contain"
@@ -75,7 +76,7 @@ function ProductDetail() {
               <Image
                 src={heart}
                 alt="heart"
-                className="w-6 h-6 sm:w-7 sm:h-7 flex-shrink-0"
+                className="w-[28px] h-[26px] flex-shrink-0"
               />
             </div>
 
@@ -130,12 +131,25 @@ function ProductDetail() {
             {/* Add to Cart Section */}
             <div className="lg:absolute bottom-0 pb-2 pt-4 flex gap-2 w-full border-t items-center">
               <div className="flex w-1/3 items-center p-3 border rounded-md outline-none justify-between">
-                <button className="text-[#9C9C9C]">-</button>
+                <button
+                  aria-label="Decrease Quantity"
+                  className="text-[#9C9C9C]"
+                >
+                  -
+                </button>
                 <span className="font-bold">1</span>
-                <button className="text-[#9C9C9C]">+</button>
+                <button
+                  aria-label="Increase Quantity"
+                  className="text-[#9C9C9C]"
+                >
+                  +
+                </button>
               </div>
               <div className="w-full flex items-center">
-                <button className="w-full border border-[#5CD2DD] bg-[#5CD2DD] text-white p-3 rounded-md font-bold uppercase">
+                <button
+                  aria-label="Add to Cart"
+                  className="w-full border border-[#5CD2DD] bg-[#5CD2DD] text-white p-3 rounded-md font-bold uppercase"
+                >
                   Ajouter au panier
                 </button>
               </div>

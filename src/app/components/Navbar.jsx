@@ -74,6 +74,7 @@ const Navbar = () => {
                   onClick={() => setSuggestions(!suggestions)}
                 />
                 <button
+                  aria-label="Search"
                   className={`px-3 rounded-r-md ${
                     suggestions ? "bg-[#0093D0]" : "bg-[#F9FAFB]"
                   }`}
@@ -92,14 +93,17 @@ const Navbar = () => {
           {/* User Actions */}
           <div className="hidden lg:flex items-center justify-end gap-4">
             <div className="flex items-center gap-2 text-[#3B4347] text-sm font-semibold cursor-pointer">
-              <Image src={bulb} alt="inspirations" className="h-4" />
+              <Image src={bulb} alt="inspirations" className="h-[18px] w-[18px]" />
               <span>Inspirations</span>
             </div>
             <div className="flex items-center gap-2 text-[#3B4347] text-sm font-semibold cursor-pointer">
               <Image src={heart} alt="favoris" className="h-3 w-3" />
               <span>Mes favoris</span>
             </div>
-            <button className="flex bg-[#0093D0] p-3 items-center gap-2 rounded-md text-white text-sm font-medium">
+            <button
+              aria-label="Open Cart"
+              className="flex bg-[#0093D0] p-3 items-center gap-2 rounded-md text-white text-sm font-medium"
+            >
               <Image src={cart} alt="panier" className="h-4 w-4" />
               Panier
             </button>
@@ -131,6 +135,7 @@ const Navbar = () => {
               placeholder="Rechercher un produit"
             />
             <button
+              aria-label="Search"
               className={`px-3 rounded-r-md ${
                 suggestions ? "bg-[#0093D0]" : "bg-[#F9FAFB]"
               }`}
@@ -158,7 +163,10 @@ const Navbar = () => {
                   <span>Mes favoris</span>
                 </li>
                 <li>
-                  <button className="w-full flex bg-[#0093D0] p-3 items-center gap-2 rounded-md text-white text-sm font-medium justify-center">
+                  <button
+                    aria-label="Open Cart"
+                    className="w-full flex bg-[#0093D0] p-3 items-center gap-2 rounded-md text-white text-sm font-medium justify-center"
+                  >
                     <Image src={cart} alt="panier" className="h-4 w-4" />
                     Panier
                   </button>
