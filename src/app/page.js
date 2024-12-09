@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Navbar from "./components/Navbar";
 import ProductDetail from "./components/ProductDetail";
 import Similar from "./components/Similar";
