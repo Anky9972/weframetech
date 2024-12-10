@@ -11,7 +11,7 @@ import arrow from "../../../public/assets/arrow-right.png";
 function Subscribe() {
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-[#fef6fa] to-[#FFFFFF] px-4 py-16 flex flex-col items-center">
-      <div className="max-w-7xl w-full">
+      <div className="w-full">
         <div className="flex flex-col items-center text-center mb-16">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-medium mb-4">
             On s&apos;occupe de <span className="text-[#5CD2DD]">tout</span>

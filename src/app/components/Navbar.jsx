@@ -5,7 +5,6 @@ import logo from "../../../public/assets/logo.png";
 import heart from "../../../public/assets/heart.png";
 import bulb from "../../../public/assets/lightbulb.png";
 import cart from "../../../public/assets/cart.png";
-import search from "../../../public/assets/search.png";
 import arrow from "../../../public/assets/arrow-down.png";
 import menu from "../../../public/assets/menu.png";
 import close from "../../../public/assets/close.png";
@@ -101,8 +100,9 @@ const Navbar = () => {
               <span>Inspirations</span>
             </div>
             <div className="flex items-center gap-2 text-[#3B4347] text-sm font-semibold cursor-pointer">
-              <Image src={heart} alt="favoris" className="h-3 w-3" />
+              <Image src={heart} alt="favoris" className="h-4 w-4" />
               <span>Mes favoris</span>
+              <span className="bg-[#CAD2D566] px-2 rounded-full text-[10px] font-semibold text-[#242D30]">24</span>
             </div>
             <button
               aria-label="Open Cart"
